@@ -8,7 +8,7 @@ import { Button } from "./components/Button";
 import { useEffect, useState } from "react";
 
 export function App() {
-  const [assignments, setAssignments] = useState([{check: false, content: "sahushaush"}]);
+  const [assignments, setAssignments] = useState([{check: false, content: "Assistir todos os episódios de Naruto, Naruto Shippuden e Boruto em um mês!"}]);
   const [newAssignment, setNewAssignment] = useState("");
   const [countCheks, setCountCheks] = useState(0);
   const [state, setState] = useState(0);
