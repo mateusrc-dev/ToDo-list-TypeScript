@@ -1,0 +1,29 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--blue-600);
+  color: var(--gray-200);
+  width: 5.625rem;
+  height: 3.25rem;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.5s;
+}
+
+.button:not(:disabled):hover {
+  filter: brightness(0.8);
+}
+
+.button svg {
+  color: var(--gray-200);
+  font-size: 0.9375rem;
+}
+
+.button:disabled {
+  filter: brightness(0.6);
+  cursor: not-allowed;
+}
