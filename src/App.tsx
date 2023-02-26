@@ -11,7 +11,6 @@ export function App() {
   const [assignments, setAssignments] = useState([{check: false, content: "Assistir todos os episódios de Naruto, Naruto Shippuden e Boruto em um mês!"}]);
   const [newAssignment, setNewAssignment] = useState("");
   const [countCheks, setCountCheks] = useState(0);
-  const [state, setState] = useState(0);
 
   function handleAddNewAssignments() {
     if (newAssignment.length == 0) {
@@ -26,11 +25,6 @@ export function App() {
   }
 
   function handleAssignmentsDelete(deleted: string) {
-    if (state == 0) {
-      setState(1);
-    } else if (state == 1) {
-      setState(0)
-    }
     const assignmentsWithoutDelete = assignments.filter(
       (assignment) => assignment.content !== deleted
     );
@@ -38,18 +32,13 @@ export function App() {
   }
 
   function handleCheckAssignment(index: number) {
-    if (state == 0) {
-      setState(1);
-    } else if (state == 1) {
-      setState(0)
-    }
     let Assignments = assignments;
     if (Assignments[index].check == true) {
       Assignments[index].check = false;
     } else if (Assignments[index].check == false) {
       Assignments[index].check = true;
     }
-    setAssignments(Assignments);
+    setAssignments([...Assignments]);
   }
 
   useEffect(() => {
@@ -63,7 +52,7 @@ export function App() {
       return checksTrue
     }
     setCountCheks(handleCheck())
-  }, [state]);
+  }, [assignments]);
 
   return (
     <main className={styles.main}>
