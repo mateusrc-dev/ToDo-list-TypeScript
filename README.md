@@ -8,4 +8,4 @@ No projeto foi utilizada a biblioteca phosphor-react para adicionar ícones na i
 
 O projeto foi criado em TypeScript e foi especificado o tipo dos dados e dos eventos que estão na aplicação.
 
-Para iniciar o servidor do projeto basta inserir o comendo "npm run dev" no terminal do VsCode.
+Para iniciar o servidor do projeto basta inserir o comando "npm run dev" no terminal do VsCode.
