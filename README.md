@@ -13,3 +13,6 @@
 ### Caso desejar usar a aplicação na sua máquina:
 
 - Para iniciar o servidor do projeto basta inserir o comando "npm run dev" no terminal do VsCode.
+
+## 🚀 Caso desejar experimentar o projeto, foi realizado o deploy dele, link abaixo:
+• https://todo-list-typescriptt.netlify.app/
